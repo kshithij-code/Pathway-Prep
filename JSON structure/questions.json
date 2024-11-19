@@ -1,0 +1,48 @@
+{
+    "init_1_in":{
+    "interest":["","",""],
+    "resume":"./path/to/resume",
+    "portfolio":"www.xyz.com"
+    },
+    "init_1_out":{
+        "questions":{
+            "question 1":["op 1","op 2","op 3","op 4"],
+            "question 2":["op 1","op 2","op 3","op 4"],
+            "question 3":["op 1","op 2","op 3","op 4"]
+        }
+    },
+    "init_2_in":{
+        "chosen_op":{
+            "question 1":["op 1"],
+            "question 2":["op 3"],
+            "question 3":["op 2"]
+        }
+    },
+    "init_2_out":{
+        "categories":{
+            "coding":30,
+            "aptitude":10,
+            "domain":10
+        },
+        "area_of_impro":{
+
+        },
+        "graph_data":{
+            "x":[],
+            "y":[]
+        }
+    },
+    "mapp_1_in":{
+        "interest":["","",""],
+        "resume":"./path/to/resume",
+        "portfolio":"www.xyz.com",
+        "categories":{
+            "coding":30,
+            "aptitude":10,
+            "domain":10
+        }
+    },
+    "mapp_1_out":{
+        "subject":[]
+    }
+}
