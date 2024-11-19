@@ -24,12 +24,10 @@
             "aptitude":10,
             "domain":10
         },
-        "area_of_impro":{
-
-        },
+        "area_of_impro":"",
         "graph_data":{
-            "x":[],
-            "y":[]
+            "x":10,
+            "y":90
         }
     },
     "mapp_1_in":{
