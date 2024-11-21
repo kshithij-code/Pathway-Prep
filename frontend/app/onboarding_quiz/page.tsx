@@ -19,32 +19,6 @@ type QuizData = {
   questions: Question[]
 }
 
-// This is mock data. In a real application, you'd fetch this from your backend.
-const mockQuizData: QuizData = {
-  questions: [
-    {
-      question: "What is the time complexity of quicksort?",
-      options: ["O(n)", "O(n log n)", "O(n^2)", "O(1)"],
-      category: "coding"
-    },
-    {
-      question: "Which of the following is not a JavaScript data type?",
-      options: ["String", "Boolean", "Float", "Object"],
-      category: "coding"
-    },
-    {
-      question: "What does CSS stand for?",
-      options: ["Computer Style Sheets", "Creative Style Sheets", "Cascading Style Sheets", "Colorful Style Sheets"],
-      category: "domain"
-    },
-    {
-      question: "If a train travels 120 km in 2 hours, what is its average speed?",
-      options: ["30 km/h", "45 km/h", "60 km/h", "75 km/h"],
-      category: "aptitude"
-    }
-  ]
-}
-
 export function TechnicalInterviewQuiz() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [answers, setAnswers] = useState<Record<string, string>>({})
@@ -54,11 +28,31 @@ export function TechnicalInterviewQuiz() {
   const [resume, setResume] = useState("")
   const [portfolio, setPortfolio] = useState("")
   const [quizStarted, setQuizStarted] = useState(false)
-
-  const questions = mockQuizData.questions
+  const [questions, setQuestions] = useState<Question[]>([])
+  const [isLoading, setIsLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
-    if (!quizStarted) return
+    const fetchQuestions = async () => {
+      try {
+        const response = await fetch('http://127.0.0.1:5000/init_1_out')
+        if (!response.ok) {
+          throw new Error('Failed to fetch questions')
+        }
+        const data: QuizData = await response.json()
+        setQuestions(data.questions)
+        setIsLoading(false)
+      } catch (err) {
+        setError('Failed to load questions. Please try again later.')
+        setIsLoading(false)
+      }
+    }
+
+    fetchQuestions()
+  }, [])
+
+  useEffect(() => {
+    if (!quizStarted || isLoading) return
 
     const timer = setInterval(() => {
       setTimeLeft((prevTime) => {
@@ -85,7 +79,7 @@ export function TechnicalInterviewQuiz() {
       clearInterval(timer)
       document.removeEventListener('visibilitychange', handleVisibilityChange)
     }
-  }, [quizStarted, currentQuestionIndex])
+  }, [quizStarted, currentQuestionIndex, isLoading])
 
   const handleAnswerChange = (value: string) => {
     setAnswers({
@@ -118,24 +112,42 @@ export function TechnicalInterviewQuiz() {
   }
 
   const calculateResults = () => {
-    const categories = {
-      coding: 0,
-      aptitude: 0,
-      domain: 0
-    }
+    const categories: Record<string, number> = {}
 
-    questions.forEach((question, index) => {
+    questions.forEach((question) => {
+      if (!categories[question.category]) {
+        categories[question.category] = 0
+      }
       if (answers[question.question] === question.options[0]) { // Assuming first option is always correct for this example
-        categories[question.category as keyof typeof categories] += 1
+        categories[question.category] += 1
       }
     })
 
-    const total = Object.values(categories).reduce((sum, value) => sum + value, 0)
     const percentages = Object.fromEntries(
-      Object.entries(categories).map(([key, value]) => [key, (value / total) * 100])
+      Object.entries(categories).map(([key, value]) => [key, (value / questions.filter(q => q.category === key).length) * 100])
     )
 
     return percentages
+  }
+
+  if (isLoading) {
+    return (
+      <Card className="w-full max-w-3xl mx-auto">
+        <CardContent className="flex items-center justify-center h-64">
+          <p>Loading questions...</p>
+        </CardContent>
+      </Card>
+    )
+  }
+
+  if (error) {
+    return (
+      <Card className="w-full max-w-3xl mx-auto">
+        <CardContent className="flex items-center justify-center h-64">
+          <p className="text-red-500">{error}</p>
+        </CardContent>
+      </Card>
+    )
   }
 
   if (!quizStarted) {
@@ -148,7 +160,7 @@ export function TechnicalInterviewQuiz() {
         <CardContent>
           <form className="space-y-4">
             {interests.map((interest, index) => (
-              <div key={index}>
+              <div key={`interest-${index}`}>
                 <Label htmlFor={`interest-${index}`}>Interest {index + 1}</Label>
                 <Input
                   id={`interest-${index}`}
@@ -156,6 +168,7 @@ export function TechnicalInterviewQuiz() {
                   onChange={(e) => handleInterestChange(index, e.target.value)}
                 />
               </div>
+
             ))}
             <div>
               <Label htmlFor="resume">Resume (file path)</Label>
@@ -233,15 +246,19 @@ export function TechnicalInterviewQuiz() {
         <form>
           <div className="space-y-4">
             <Label>{currentQuestion.question}</Label>
-            <RadioGroup value={answers[currentQuestion.question]} onValueChange={handleAnswerChange}>
+            <RadioGroup
+              value={answers[currentQuestion.question] || ""}
+              onValueChange={handleAnswerChange}
+            >
               {currentQuestion.options.map((option, index) => (
-                <div key={index} className="flex items-center space-x-2">
-                  <RadioGroupItem value={option} id={`option-${index}`} />
-                  <Label htmlFor={`option-${index}`}>{option}</Label>
+                <div key={`${currentQuestion.question}-${index}`} className="flex items-center space-x-2">
+                  <RadioGroupItem value={option} id={`option-${currentQuestionIndex}-${index}`} />
+                  <Label htmlFor={`option-${currentQuestionIndex}-${index}`}>{option}</Label>
                 </div>
               ))}
             </RadioGroup>
           </div>
+
         </form>
       </CardContent>
       <CardFooter>
@@ -252,4 +269,3 @@ export function TechnicalInterviewQuiz() {
     </Card>
   )
 }
-
