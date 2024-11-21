@@ -10,9 +10,9 @@ def index():
 def init_1():
     return jsonify({
         "questions":{
-            "question 1":["op 1","op 2","op 3","op 4"],
-            "question 2":["op 1","op 2","op 3","op 4"],
-            "question 3":["op 1","op 2","op 3","op 4"]
+            {"question 1":["op 1","op 2","op 3","op 4"],"category":"coding"},
+            {"question 2":["op 1","op 2","op 3","op 4"],"category":"coding"},
+            {"question 3":["op 1","op 2","op 3","op 4"],"category":"domain"}
         }})
     
 @app.route("/init_2_out")
