@@ -6,7 +6,7 @@ app=Flask(__name__)
 def index():
     return "hello world"
 
-@app.route("/init_1_in",["GET","POST"])
+@app.route("/init_1_out")
 def init_1():
     return jsonify({
         "questions":{
@@ -15,14 +15,19 @@ def init_1():
             "question 3":["op 1","op 2","op 3","op 4"]
         }})
     
-@app.route("/init_2_in",["GET","POST"])
+@app.route("/init_2_out")
 def init_2():
     
     return jsonify({
-        "chosen_op":{
-            "question 1":["op 1"],
-            "question 2":["op 3"],
-            "question 3":["op 2"]
+        "categories":{
+            "coding":30,
+            "aptitude":10,
+            "domain":10
+        },
+        "area_of_impro":"",
+        "graph_data":{
+            "x":10,
+            "y":90
         }
     })
 

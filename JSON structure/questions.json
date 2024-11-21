@@ -41,6 +41,7 @@
         }
     },
     "mapp_1_out":{
-        "subject":[]
+        "subject":["c"],
+        "graph":{"step 1":["sd","asd","asf"],"step 2":["sdg","df","fvs"],"final":["qew","sada"]}
     }
 }
