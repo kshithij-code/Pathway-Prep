@@ -19,7 +19,7 @@ type QuizData = {
   questions: Question[]
 }
 
-export function TechnicalInterviewQuiz() {
+export default function TechnicalInterviewQuiz() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [answers, setAnswers] = useState<Record<string, string>>({})
   const [quizCompleted, setQuizCompleted] = useState(false)
@@ -152,7 +152,7 @@ export function TechnicalInterviewQuiz() {
 
   if (!quizStarted) {
     return (
-      <Card className="w-full max-w-3xl mx-auto">
+      <Card className="w-full max-w-3xl mx-auto ml-10">
         <CardHeader>
           <CardTitle>Technical Interview Preparation</CardTitle>
           <CardDescription>Please fill in your details to start the quiz</CardDescription>
