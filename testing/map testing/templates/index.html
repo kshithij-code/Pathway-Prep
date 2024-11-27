@@ -1,0 +1,101 @@
+]<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Improvement Roadmap</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        input {
+            font-size: 16px;
+            padding: 8px;
+            margin: 5px;
+        }
+        button {
+            font-size: 16px;
+            padding: 8px 15px;
+            background-color: #4A90E2;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .roadmap {
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .roadmap h2 {
+            text-align: center;
+            color: #4A90E2;
+        }
+        .improvement {
+            margin: 10px 0;
+            padding: 15px;
+            border-left: 4px solid #4A90E2;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        .improvement-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+        .improvement-description {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalized Improvement Roadmap</h1>
+    <form id="scoreForm">
+        <label for="score">Enter your test score:</label>
+        <input type="number" id="score" name="score" min="0" max="100" required>
+        <button type="submit">Generate Roadmap</button>
+    </form>
+    <div id="roadmapContainer" style="display:none;" class="roadmap">
+        <h2>Roadmap for <span id="category"></span></h2>
+        <div id="improvements"></div>
+    </div>
+    <script>
+        document.getElementById("scoreForm").addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const score = document.getElementById("score").value;
+            const response = await fetch("/generate_roadmap", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ score: parseInt(score) }),
+            });
+            const data = await response.json();
+            document.getElementById("roadmapContainer").style.display = "block";
+            document.getElementById("category").innerText = data.category;
+            const improvementsContainer = document.getElementById("improvements");
+            improvementsContainer.innerHTML = "";
+            data.improvements.forEach((item) => {
+                const improvementDiv = document.createElement("div");
+                improvementDiv.classList.add("improvement");
+                improvementDiv.innerHTML = `
+                    <div class="improvement-title">${item.title}</div>
+                    <div class="improvement-description">${item.description}</div>
+                `;
+                improvementsContainer.appendChild(improvementDiv);
+            });
+        });
+    </script>
+</body>
+</html>
