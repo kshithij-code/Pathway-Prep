@@ -1,12 +1,47 @@
-from flask import Flask,jsonify
+from flask import Flask,jsonify,session,request
 from flask_cors import CORS
+import pymongo
+# import pymongo.mongo_client
+# from flask_pymongo import PyMongo
 
 app=Flask(__name__)
 CORS(app)
 
-@app.route("/")
-def index():
-    return "hello world"
+myclient=pymongo.MongoClient("mongodb://localhost:27017/PathwayPrep")
+usersDB=myclient["usersDB"]
+validations=usersDB["users"]
+
+app.secret_key="pathway"
+
+@app.route("/login",methods=['GET'])
+def login():
+    user=request.json["user"]
+    USN=request.json["USN"]
+    password=request.json["password"]
+    if not  validations.find_one({"USN":USN}):
+        return jsonify({"login":False})
+    
+    if password not in validations.find_one({"USN":USN})["password"]:
+        print(validations.find_one({"USN":USN},{"password":1}))
+        return jsonify({"login":False})
+    
+    return jsonify({"login":True})
+
+@app.route("/signup",methods=["POST"])
+def signup():
+    user=request.json["user"]
+    USN=request.json["USN"]
+    password=request.json["password"]
+    college=request.json["college"]
+    
+    print(user,USN,password,college)
+    
+    if validations.find_one({"USN":USN}):
+        return jsonify({"signup":False}) 
+    
+    validations.insert_one({"user":user,"USN":USN,"college":college,"password":password})
+    return jsonify({"signup":True})
+
 
 @app.route("/init_1_out")
 def init_1():
