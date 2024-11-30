@@ -907,7 +907,314 @@
         ],
         "answer": "D) All of the above."
       }
-    ]
+    ],
+
+
+    "Full Stack Development": [
+        {
+          "question": "What is the primary purpose of the front-end in a full stack web application?",
+          "options": [
+            "A) Handle user authentication",
+            "B) Display content and interact with users",
+            "C) Connect to the database",
+            "D) Run background processes"
+          ],
+          "answer": "B) Display content and interact with users"
+        },
+        {
+          "question": "Which of the following is a back-end technology?",
+          "options": [
+            "A) HTML",
+            "B) CSS",
+            "C) Node.js",
+            "D) JavaScript"
+          ],
+          "answer": "C) Node.js"
+        },
+        {
+          "question": "What does the MVC architecture stand for in full stack development?",
+          "options": [
+            "A) Model, View, Controller",
+            "B) Multiple, Variable, Component",
+            "C) Minimum, Valid, Code",
+            "D) Model, Variable, Component"
+          ],
+          "answer": "A) Model, View, Controller"
+        },
+        {
+          "question": "Which database is widely used in full stack development for handling large-scale applications with structured data?",
+          "options": [
+            "A) MongoDB",
+            "B) SQLite",
+            "C) MySQL",
+            "D) Firebase"
+          ],
+          "answer": "C) MySQL"
+        },
+        {
+          "question": "Which framework is most commonly used for front-end development in full-stack JavaScript?",
+          "options": [
+            "A) React",
+            "B) Angular",
+            "C) Vue.js",
+            "D) jQuery"
+          ],
+          "answer": "A) React"
+        },
+        {
+          "question": "Which of the following is a server-side language?",
+          "options": [
+            "A) Python",
+            "B) HTML",
+            "C) CSS",
+            "D) JavaScript"
+          ],
+          "answer": "A) Python"
+        },
+        {
+          "question": "Which of the following is NOT a full-stack JavaScript framework?",
+          "options": [
+            "A) Angular",
+            "B) Express.js",
+            "C) React",
+            "D) Django"
+          ],
+          "answer": "D) Django"
+        },
+        {
+          "question": "What is the role of RESTful APIs in full-stack development?",
+          "options": [
+            "A) Handle user authentication",
+            "B) Serve static content",
+            "C) Enable communication between front-end and back-end",
+            "D) Store data in the database"
+          ],
+          "answer": "C) Enable communication between front-end and back-end"
+        },
+        {
+          "question": "Which of the following tools is commonly used for version control in full stack development?",
+          "options": [
+            "A) Git",
+            "B) Jira",
+            "C) Docker",
+            "D) Selenium"
+          ],
+          "answer": "A) Git"
+        },
+        {
+          "question": "Which HTTP method is used to update an existing resource on the server?",
+          "options": [
+            "A) GET",
+            "B) POST",
+            "C) PUT",
+            "D) DELETE"
+          ],
+          "answer": "C) PUT"
+        },
+        {
+          "question": "What does the term 'responsive design' refer to in front-end development?",
+          "options": [
+            "A) Design that adapts to different screen sizes",
+            "B) Design that responds to user input",
+            "C) Design optimized for search engines",
+            "D) Design that only works on mobile devices"
+          ],
+          "answer": "A) Design that adapts to different screen sizes"
+        },
+        {
+          "question": "Which tool can be used to bundle JavaScript files in full-stack development?",
+          "options": [
+            "A) Webpack",
+            "B) Docker",
+            "C) Postman",
+            "D) GitHub"
+          ],
+          "answer": "A) Webpack"
+        },
+        {
+          "question": "Which database system is used in NoSQL databases?",
+          "options": [
+            "A) PostgreSQL",
+            "B) MongoDB",
+            "C) MySQL",
+            "D) SQLite"
+          ],
+          "answer": "B) MongoDB"
+        },
+        {
+          "question": "What is the role of middleware in web applications?",
+          "options": [
+            "A) Process requests before they reach the route handlers",
+            "B) Handle client-side interactions",
+            "C) Manage static files",
+            "D) Validate user inputs on the client-side"
+          ],
+          "answer": "A) Process requests before they reach the route handlers"
+        },
+        {
+          "question": "Which of the following is an example of a templating engine used in Node.js?",
+          "options": [
+            "A) EJS",
+            "B) React",
+            "C) jQuery",
+            "D) Bootstrap"
+          ],
+          "answer": "A) EJS"
+        },
+        {
+          "question": "Which of the following front-end tools is used to manage stylesheets in web applications?",
+          "options": [
+            "A) Bootstrap",
+            "B) NPM",
+            "C) Angular",
+            "D) Webpack"
+          ],
+          "answer": "A) Bootstrap"
+        },
+        {
+          "question": "Which of the following is used to handle HTTP requests in Node.js?",
+          "options": [
+            "A) React",
+            "B) Express.js",
+            "C) Flask",
+            "D) Django"
+          ],
+          "answer": "B) Express.js"
+        },
+        {
+          "question": "What does CORS stand for in web development?",
+          "options": [
+            "A) Cross-Origin Resource Sharing",
+            "B) Cross-Origin Response Service",
+            "C) Cross-Origin Remote Storage",
+            "D) Cross-Resource Operational System"
+          ],
+          "answer": "A) Cross-Origin Resource Sharing"
+        },
+        {
+          "question": "Which of the following is an example of a front-end framework for building dynamic user interfaces?",
+          "options": [
+            "A) Flask",
+            "B) Angular",
+            "C) Spring Boot",
+            "D) Hibernate"
+          ],
+          "answer": "B) Angular"
+        },
+        {
+          "question": "Which programming language is used for server-side scripting in Node.js?",
+          "options": [
+            "A) Ruby",
+            "B) JavaScript",
+            "C) Python",
+            "D) PHP"
+          ],
+          "answer": "B) JavaScript"
+        }
+      ],
+
+      "Data Analytics": [
+        {
+          "question": "What is the purpose of data normalization in data analysis?",
+          "options": [
+            "A) To reduce data redundancy",
+            "B) To make data consistent across sources",
+            "C) To scale data values within a certain range",
+            "D) To sort data in ascending order"
+          ],
+          "answer": "C) To scale data values within a certain range"
+        },
+        {
+          "question": "Which of the following is a type of machine learning algorithm used for classification tasks?",
+          "options": [
+            "A) Linear Regression",
+            "B) Decision Tree",
+            "C) K-means clustering",
+            "D) PCA"
+          ],
+          "answer": "B) Decision Tree"
+        },
+        {
+          "question": "Which Python library is primarily used for data analysis and manipulation?",
+          "options": [
+            "A) NumPy",
+            "B) Matplotlib",
+            "C) Pandas",
+            "D) Flask"
+          ],
+          "answer": "C) Pandas"
+        },
+        {
+          "question": "What is the primary purpose of a scatter plot in data visualization?",
+          "options": [
+            "A) To show trends over time",
+            "B) To compare categorical data",
+            "C) To show the relationship between two continuous variables",
+            "D) To display the distribution of a single variable"
+          ],
+          "answer": "C) To show the relationship between two continuous variables"
+        },
+        {
+          "question": "Which of the following is a common statistical measure for determining the central tendency of data?",
+          "options": [
+            "A) Variance",
+            "B) Standard deviation",
+            "C) Mean",
+            "D) Range"
+          ],
+          "answer": "C) Mean"
+        },
+        {
+          "question": "What is a correlation coefficient used to measure in data analysis?",
+          "options": [
+            "A) The spread of data",
+            "B) The central tendency of data",
+            "C) The relationship between two variables",
+            "D) The normality of data"
+          ],
+          "answer": "C) The relationship between two variables"
+        },
+        {
+          "question": "Which of the following is the purpose of data wrangling in data analytics?",
+          "options": [
+            "A) To clean and prepare raw data for analysis",
+            "B) To apply statistical models",
+            "C) To visualize data trends",
+            "D) To deploy machine learning models"
+          ],
+          "answer": "A) To clean and prepare raw data for analysis"
+        },
+        {
+          "question": "What does the term 'big data' refer to in data analytics?",
+          "options": [
+            "A) Data with high volume, variety, and velocity",
+            "B) Data stored in large data centers",
+            "C) Data that is structured only",
+            "D) Data collected from social media platforms"
+          ],
+          "answer": "A) Data with high volume, variety, and velocity"
+        },
+        {
+          "question": "Which of the following is an unsupervised learning algorithm used in clustering?",
+          "options": [
+            "A) K-Nearest Neighbors",
+            "B) Decision Tree",
+            "C) K-Means",
+            "D) Linear Regression"
+          ],
+          "answer": "C) K-Means"
+        },
+        {
+          "question": "Which of the following is used for dimensionality reduction in data analytics?",
+          "options": [
+            "A) Principal Component Analysis (PCA)",
+            "B) Naive Bayes",
+            "C) Logistic Regression",
+            "D) Decision Trees"
+          ],
+          "answer": "A) Principal Component Analysis (PCA)"
+        }
+      ]
 
 
 }
