@@ -93,16 +93,15 @@ def submit_quiz():
             print(scores,maxsc)
     return jsonify({
         "categories":{
-            "coding":scores-20,
-            "aptitude":scores-30,
-            "domain":scores-30,
-            "AIML":10,
-            "data":30
+            "scores":scores,
+            "coding":20,
+            "aptitude":30,
+            "domain":30
         },
         "area_of_impro":"need to improve in coding",
         "graph_data":{
-            "x":maxsc-scores,
-            "y":maxsc
+            "x":30,
+            "y":90
         }
     })
 

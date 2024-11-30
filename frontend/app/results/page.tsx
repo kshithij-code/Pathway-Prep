@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { useRouter } from 'next/navigation'
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart"
 import { ResponsiveContainer, ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts'
+import ReactStars from 'react-stars'
 
 interface QuizResult {
     categories: {
@@ -41,10 +42,10 @@ export default function ResultsPage() {
 
     if (!result) return null
 
-    const chartData = [result ? ["graph_data"] : {
+    const chartData = [result ?.graph_data || {
         "graph_data": {
             "x": 10,
-            "y": 10
+            "y": 90
         }
     }]
 
@@ -59,7 +60,10 @@ export default function ResultsPage() {
                     <CardContent>
                         <ul className="space-y-2">
                             {Object.keys(result?.categories || {}).map((key) => (
-                                <li>{key}:{result.categories[key]}</li>
+                                <li>
+                                    <p>{key}</p>
+                                <ReactStars count={5} size={24} color2={'#ffd700'} edit={false} value={result.categories[key]/10}/> </li>
+                                
                             ))}
                         </ul>
                     </CardContent>
@@ -69,7 +73,8 @@ export default function ResultsPage() {
                         <CardTitle>Area of Improvement</CardTitle>
                     </CardHeader>
                     <CardContent>
-                        <p>{result ? ["area_of_impro"] : "No specific area of improvement identified."}</p>
+                        <p>{result?.area_of_impro || "No specific area of improvement identified."}</p>
+                        
                     </CardContent>
                 </Card>
             </div>
