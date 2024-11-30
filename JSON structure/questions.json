@@ -33,15 +33,48 @@
     "mapp_1_in":{
         "interest":["","",""],
         "resume":"./path/to/resume",
-        "portfolio":"www.xyz.com",
         "categories":{
             "coding":30,
             "aptitude":10,
             "domain":10
         }
     },
-    "mapp_1_out":{
-        "subject":["c"],
-        "graph":{"step 1":["sd","asd","asf"],"step 2":["sdg","df","fvs"],"final":["qew","sada"]}
-    }
+    "genarate_roadmap":{
+        "title": "UI/UX Learning Roadmap",
+        "nodes": [
+            {
+            "id": "1",
+            "type": "input",
+            "data": { "label": "UI / UX" },
+            "position": { "x": 250, "y": 0 },
+            "style": {
+                "background": "#fff",
+                "border": "1px solid #1a192b",
+                "borderRadius": "3px",
+                "padding": "10px"
+            }
+            },
+            {
+            "id": "2",
+            "data": { "label": "Basics of UI/UX Design" },
+            "position": { "x": 250, "y": 100 },
+            "style": {
+                "background": "#ffeb3b",
+                "border": "1px solid #1a192b",
+                "borderRadius": "3px",
+                "padding": "10px"
+            }
+            }
+        ],
+        "edges": [
+            {
+            "id": "e1-2",
+            "source": "1",
+            "target": "2",
+            "type": "smoothstep",
+            "animated": true,
+            "style": { "stroke": "#1a192b" }
+            }
+        ]
+        }
 }

@@ -1,6 +1,7 @@
 from flask import Flask,jsonify,session,request
 from flask_cors import CORS
 import pymongo
+from model.roadmap import generate_dynamic_roadmap
 # import pymongo.mongo_client
 # from flask_pymongo import PyMongo
 
@@ -13,10 +14,9 @@ validations=usersDB["users"]
 
 app.secret_key="pathway"
 
-@app.route("/login",methods=['GET'])
+@app.route("/login",methods=['GET',"POST"])
 def login():
-    user=request.json["user"]
-    USN=request.json["USN"]
+    USN=request.json["usn"]
     password=request.json["password"]
     if not  validations.find_one({"USN":USN}):
         return jsonify({"login":False})
@@ -29,29 +29,26 @@ def login():
 
 @app.route("/signup",methods=["POST"])
 def signup():
-    user=request.json["user"]
-    USN=request.json["USN"]
+    user=request.json["username"]
+    USN=request.json["usn"]
     password=request.json["password"]
     college=request.json["college"]
     
     print(user,USN,password,college)
     
+    print(validations.find_one({"USN":USN}))
+    
     if validations.find_one({"USN":USN}):
-        return jsonify({"signup":False}) 
+        return jsonify({"signup":False})
     
     validations.insert_one({"user":user,"USN":USN,"college":college,"password":password})
     return jsonify({"signup":True})
 
 
-@app.route("/init_1_out")
-def init_1():
-    # return jsonify({
-    #         "questions":[
-    #             {"question 1":["op 1","op 2","op 3","op 4"],"category":"coding"},
-    #             {"question 2":["op 1","op 2","op 3","op 4"],"category":"coding"},
-    #             {"question 3":["op 1","op 2","op 3","op 4"],"category":"domain"}
-    #         ]
-    #     })
+@app.route("/genarate_ques",methods=["GET","POST"])
+def genarate_ques():
+    interests=request.json["interests"]
+    resume=request.json["resume"]
     return jsonify({
         "questions": [
         {
@@ -77,8 +74,9 @@ def init_1():
         ]
         })
     
-@app.route("/init_2_out")
-def init_2():
+@app.route("/submit_quiz",methods=["POST"])
+def submit_quiz():
+    answers=request.json["answers"]
     
     return jsonify({
         "categories":{
@@ -93,5 +91,18 @@ def init_2():
         }
     })
 
+@app.route("/genarate_roadmap",methods=["GET","POST"])
+def roadmap():
+    USN=request.json["usn"]
+    per_roadmap=generate_dynamic_roadmap({
+        "categories": {
+            "coding": 30,
+            "aptitude": 10,
+            "domain": 10
+        },
+        "interest": [ "data science","computer network","master"]
+    })
+    return jsonify(per_roadmap)
+    
 if __name__=="__main__":
     app.run(debug=True)
