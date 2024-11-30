@@ -73,7 +73,7 @@ export default function Quiz() {
 
     const handleSubmit = async () => {
         try {
-            console.log({answers})
+            console.log({answers},"hmmm")
             // Send answers to your backend
             const response = await fetch("http://127.0.0.1:5000/submit_quiz", {
                 method: "POST",

@@ -15,11 +15,15 @@ export default function UserEntryPage() {
     const [loginState, loginAction] = useFormState(login, null)
 
     useEffect(() => {
-        if (loginState?.success) {
+        if (signUpState?.success) {
             router.push(`/interest`)
         }
+    }, [signUpState, router])
+    useEffect(() => {
+        if (loginState?.success) {
+            router.push(`/flowchart`)
+        }
     }, [loginState, router])
-
     return (
         <div className="flex items-center justify-center min-h-screen bg-gray-100">
             <div className="p-8 bg-white rounded-lg shadow-md w-96">

@@ -8,11 +8,14 @@ from model.roadmap import generate_dynamic_roadmap
 app=Flask(__name__)
 CORS(app)
 
+
 myclient=pymongo.MongoClient("mongodb://localhost:27017/PathwayPrep")
 usersDB=myclient["usersDB"]
 validations=usersDB["users"]
 
 app.secret_key="pathway"
+
+real_answers=[]
 
 @app.route("/login",methods=['GET',"POST"])
 def login():
@@ -47,17 +50,20 @@ def signup():
 
 @app.route("/genarate_ques",methods=["GET","POST"])
 def genarate_ques():
+    # global real_answers
     interests=request.json["interests"]
     resume=request.json["resume"]
+    for i in ["O(n log n)","Float","Cascading Style Sheets","60 km/h"]:
+        real_answers.append(i)
     return jsonify({
         "questions": [
         {
-            "question": "What is the time complexity of quicksort?",
+            "question": "Whats is the time complexity of quicksort?",
             "options": ["O(n)", "O(n log n)", "O(n^2)", "O(1)"],
             "category": "coding"
         },
         {
-            "question": "Which of the following is not a JavaScript data type?",
+            "question": "Which of the following is not a JavaScript data type? hmm",
             "options": ["String", "Boolean", "Float", "Object"],
             "category": "coding"
         },
@@ -76,18 +82,26 @@ def genarate_ques():
     
 @app.route("/submit_quiz",methods=["POST"])
 def submit_quiz():
+    # global real_answers
     answers=request.json["answers"]
-    
+    print(answers,real_answers)
+    scores=0
+    maxsc=0
+    for i in answers:
+        maxsc+=10
+        if i in real_answers:
+            scores+=10
+            print(scores,maxsc)
     return jsonify({
         "categories":{
-            "coding":30,
-            "aptitude":10,
-            "domain":10
+            "coding":scores-20,
+            "aptitude":scores-30,
+            "domain":scores-30
         },
-        "area_of_impro":"",
+        "area_of_impro":"need to improve in coding",
         "graph_data":{
-            "x":10,
-            "y":90
+            "x":maxsc-scores,
+            "y":maxsc
         }
     })
 

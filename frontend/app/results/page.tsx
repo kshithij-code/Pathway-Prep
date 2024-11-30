@@ -12,6 +12,7 @@ interface QuizResult {
         coding: number
         aptitude: number
         domain: number
+
     }
     area_of_impro: string
     graph_data: {
@@ -33,9 +34,9 @@ export default function ResultsPage() {
         }
     }, [router])
 
-    const handleRetry = () => {
+    const handleflow = () => {
         localStorage.removeItem('quizResult')
-        router.push('/')
+        router.push('/flowchart')
     }
 
     if (!result) return null
@@ -52,6 +53,9 @@ export default function ResultsPage() {
                     </CardHeader>
                     <CardContent>
                         <ul className="space-y-2">
+                            {
+                                // result.map()
+                            }
                             <li>Coding: {result.categories.coding}%</li>
                             <li>Aptitude: {result.categories.aptitude}%</li>
                             <li>Domain: {result.categories.domain}%</li>
@@ -95,7 +99,7 @@ export default function ResultsPage() {
                 </CardContent>
             </Card>
             <div className="mt-8 text-center">
-                <Button onClick={handleRetry}>Retry Quiz</Button>
+                <Button onClick={handleflow}>Flowchart</Button>
             </div>
         </div>
     )
