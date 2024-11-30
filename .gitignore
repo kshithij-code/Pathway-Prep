@@ -7,3 +7,4 @@ frontend/uploads/1732867879400-Achalresume.pdf
 frontend/uploads/1732867985384-Achalresume.pdf
 frontend/uploads/1732867990843-Achalresume.pdf
 .gitignore
+backend/model/__pycache__/exportQuestions.cpython-311.pyc

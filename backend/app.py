@@ -2,6 +2,7 @@ from flask import Flask,jsonify,session,request
 from flask_cors import CORS
 import pymongo
 from model.roadmap import generate_dynamic_roadmap
+from model.exportQuestions import get_random_question,random
 # import pymongo.mongo_client
 # from flask_pymongo import PyMongo
 
@@ -25,7 +26,7 @@ def login():
         return jsonify({"login":False})
     
     if password not in validations.find_one({"USN":USN})["password"]:
-        print(validations.find_one({"USN":USN},{"password":1}))
+        # print(validations.find_one({"USN":USN},{"password":1}))
         return jsonify({"login":False})
     
     return jsonify({"login":True})
@@ -37,9 +38,9 @@ def signup():
     password=request.json["password"]
     college=request.json["college"]
     
-    print(user,USN,password,college)
+    # print(user,USN,password,college)
     
-    print(validations.find_one({"USN":USN}))
+    # print(validations.find_one({"USN":USN}))
     
     if validations.find_one({"USN":USN}):
         return jsonify({"signup":False})
@@ -53,52 +54,52 @@ def genarate_ques():
     global real_answers
     interests=request.json["interests"]
     resume=request.json["resume"]
-    real_answers=["O(n log n)","Float","Cascading Style Sheets","60 km/h"]
+    questions=[]
+    if len(interests)<1:
+        for i in range(5):
+            question,answer=get_random_question(interests[0])
+            question["category"]=interests[0]
+            questions.append(question)
+            real_answers.append([answer,interests[0]])
+    else:
+        for i in range(5):
+            num=random.randint(0,len(interests)-1)
+            question,answer=get_random_question(interests[num])
+            question["category"]=interests[num]
+            questions.append(question)
+            real_answers.append([answer,interests[num]])
     return jsonify({
-        "questions": [
-        {
-            "question": "Whats is the time complexity of quicksort?",
-            "options": ["O(n)", "O(n log n)", "O(n^2)", "O(1)"],
-            "category": "coding"
-        },
-        {
-            "question": "Which of the following is not a JavaScript data type? hmm",
-            "options": ["String", "Boolean", "Float", "Object"],
-            "category": "coding"
-        },
-        {
-            "question": "What does CSS stand for?",
-            "options": ["Computer Style Sheets", "Creative Style Sheets", "Cascading Style Sheets", "Colorful Style Sheets"],
-            "category": "domain"
-        },
-        {
-            "question": "If a train travels 120 km in 2 hours, what is its average speed?",
-            "options": ["30 km/h", "45 km/h", "60 km/h", "75 km/h"],
-            "category": "aptitude"
-        }
-        ]
+        "questions": questions
         })
     
 @app.route("/submit_quiz",methods=["POST"])
 def submit_quiz():
     global real_answers
     answers=request.json["answers"]
-    print(answers,real_answers)
-    scores=0
+    # print(answers,real_answers)
+    # scores=0
     maxsc=0
+    categories={}
     for i in answers:
         maxsc+=10
-        if i in real_answers:
-            scores+=10
-            print(scores,maxsc)
+        for j in real_answers:
+            print(j[0],j[1],"debug 0")
+            if j[1] not in categories:
+                print(j[1],"debug 1")
+                categories[j[1]]=0
+            if j[0]["answer"]==i:
+                print(j[0],"debug 2")
+                categories[j[1]]+=10
+    # print(categories)
+    lowest_cat=""
+    lowest_score=99999
+    for i in categories.keys():
+        if categories[i]<=lowest_score:
+            lowest_score=categories[i]
+            lowest_cat=i
     return jsonify({
-        "categories":{
-            "scores":scores,
-            "coding":20,
-            "aptitude":30,
-            "domain":30
-        },
-        "area_of_impro":"need to improve in coding",
+        "categories":categories,
+        "area_of_impro":f"need to improve in {lowest_cat}",
         "graph_data":{
             "x":30,
             "y":90

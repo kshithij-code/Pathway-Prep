@@ -49,5 +49,5 @@ def parse_skills_and_projects(file_path):
     }
 
 # Test the function
-parsed_data = parse_skills_and_projects("D:\Downloads\AchalResume.pdf")
+parsed_data = parse_skills_and_projects()
 print(parsed_data)
