@@ -22,7 +22,7 @@ interface QuizResult {
 }
 
 export default function ResultsPage() {
-    const [result, setResult] = useState<QuizResult | null>(null)
+    const [result, setResult] = useState<{} | null>(null)
     const router = useRouter()
 
     useEffect(() => {
@@ -41,7 +41,12 @@ export default function ResultsPage() {
 
     if (!result) return null
 
-    const chartData = [result.graph_data]
+    const chartData = [result ? ["graph_data"] : {
+        "graph_data": {
+            "x": 10,
+            "y": 10
+        }
+    }]
 
     return (
         <div className="container mx-auto px-4 py-8">
@@ -53,12 +58,9 @@ export default function ResultsPage() {
                     </CardHeader>
                     <CardContent>
                         <ul className="space-y-2">
-                            {
-                                // result.map()
-                            }
-                            <li>Coding: {result.categories.coding}%</li>
-                            <li>Aptitude: {result.categories.aptitude}%</li>
-                            <li>Domain: {result.categories.domain}%</li>
+                            {Object.keys(result?.categories || {}).map((key) => (
+                                <li>{key}:{result.categories[key]}</li>
+                            ))}
                         </ul>
                     </CardContent>
                 </Card>
@@ -67,7 +69,7 @@ export default function ResultsPage() {
                         <CardTitle>Area of Improvement</CardTitle>
                     </CardHeader>
                     <CardContent>
-                        <p>{result.area_of_impro || "No specific area of improvement identified."}</p>
+                        <p>{result ? ["area_of_impro"] : "No specific area of improvement identified."}</p>
                     </CardContent>
                 </Card>
             </div>

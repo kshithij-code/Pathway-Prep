@@ -87,7 +87,7 @@ export default function Quiz() {
                 throw new Error("Failed to submit quiz")
             }
 
-            const result: QuizResult = await response.json()
+            const result: Object = await response.json()
 
             // Store result in localStorage
             localStorage.setItem('quizResult', JSON.stringify(result))

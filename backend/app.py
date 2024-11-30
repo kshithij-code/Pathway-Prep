@@ -50,11 +50,10 @@ def signup():
 
 @app.route("/genarate_ques",methods=["GET","POST"])
 def genarate_ques():
-    # global real_answers
+    global real_answers
     interests=request.json["interests"]
     resume=request.json["resume"]
-    for i in ["O(n log n)","Float","Cascading Style Sheets","60 km/h"]:
-        real_answers.append(i)
+    real_answers=["O(n log n)","Float","Cascading Style Sheets","60 km/h"]
     return jsonify({
         "questions": [
         {
@@ -82,7 +81,7 @@ def genarate_ques():
     
 @app.route("/submit_quiz",methods=["POST"])
 def submit_quiz():
-    # global real_answers
+    global real_answers
     answers=request.json["answers"]
     print(answers,real_answers)
     scores=0
@@ -96,7 +95,9 @@ def submit_quiz():
         "categories":{
             "coding":scores-20,
             "aptitude":scores-30,
-            "domain":scores-30
+            "domain":scores-30,
+            "AIML":10,
+            "data":30
         },
         "area_of_impro":"need to improve in coding",
         "graph_data":{
