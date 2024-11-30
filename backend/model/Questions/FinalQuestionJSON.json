@@ -1,0 +1,913 @@
+{
+  "Aptitude": [
+    {
+      "question": "If the sum of two numbers is 45 and their difference is 15, what are the numbers?",
+      "options": ["A) 25, 20", "B) 30, 15", "C) 27, 18", "D) 28, 17"],
+      "answer": "A) 25, 20"
+    },
+    {
+      "question": "A train moves at a speed of 60 km/h. How long will it take to cover 120 km?",
+      "options": ["A) 1 hour", "B) 2 hours", "C) 3 hours", "D) 4 hours"],
+      "answer": "B) 2 hours"
+    },
+    {
+      "question": "If a man can walk 5 km in 1 hour, how far can he walk in 6 hours at the same pace?",
+      "options": ["A) 25 km", "B) 30 km", "C) 35 km", "D) 40 km"],
+      "answer": "B) 30 km"
+    },
+    {
+      "question": "A box contains 4 red balls, 5 blue balls, and 6 green balls. What is the probability of drawing a blue ball?",
+      "options": ["A) 4/15", "B) 5/15", "C) 6/15", "D) 5/10"],
+      "answer": "B) 5/15"
+    },
+    {
+      "question": "The ratio of the ages of A and B is 3:4. If the sum of their ages is 35, what are their individual ages?",
+      "options": ["A) 15 and 20", "B) 12 and 23", "C) 14 and 21", "D) 17 and 18"],
+      "answer": "A) 15 and 20"
+    },
+    {
+      "question": "A car travels 40 km in 30 minutes. What is its speed in km/h?",
+      "options": ["A) 60 km/h", "B) 80 km/h", "C) 100 km/h", "D) 120 km/h"],
+      "answer": "B) 80 km/h"
+    },
+    {
+      "question": "If 2x + 3 = 11, what is the value of x?",
+      "options": ["A) 3", "B) 4", "C) 5", "D) 6"],
+      "answer": "A) 4"
+    },
+    {
+      "question": "A person buys a product for Rs. 150 and sells it for Rs. 180. What is the percentage profit?",
+      "options": ["A) 10%", "B) 15%", "C) 20%", "D) 25%"],
+      "answer": "C) 20%"
+    },
+    {
+      "question": "A right triangle has sides of 6 and 8. What is the length of the hypotenuse?",
+      "options": ["A) 10", "B) 12", "C) 14", "D) 16"],
+      "answer": "A) 10"
+    },
+    {
+      "question": "A sum of money doubles in 10 years. What will be the time for it to triple at the same interest rate?",
+      "options": ["A) 15 years", "B) 20 years", "C) 25 years", "D) 30 years"],
+      "answer": "C) 25 years"
+    },
+    {
+      "question": "How many degrees are there in the sum of the interior angles of a triangle?",
+      "options": ["A) 90°", "B) 180°", "C) 270°", "D) 360°"],
+      "answer": "B) 180°"
+    },
+    {
+      "question": "Find the area of a circle with a radius of 7 cm.",
+      "options": ["A) 22 cm²", "B) 49 cm²", "C) 154 cm²", "D) 154 cm³"],
+      "answer": "B) 49 cm²"
+    },
+    {
+      "question": "If a clock shows the time as 2:00 PM, what will be the angle between the hour and minute hands?",
+      "options": ["A) 30°", "B) 45°", "C) 60°", "D) 90°"],
+      "answer": "A) 30°"
+    },
+    {
+      "question": "A man spends 25% of his salary on rent, 10% on groceries, and saves the rest. If his salary is Rs. 40,000, how much does he save?",
+      "options": ["A) Rs. 20,000", "B) Rs. 25,000", "C) Rs. 28,500", "D) Rs. 30,000"],
+      "answer": "C) Rs. 28,500"
+    },
+    {
+      "question": "The population of a city increases by 5% every year. If the population is 20,000 now, what will it be after 3 years?",
+      "options": ["A) 21,500", "B) 22,000", "C) 23,000", "D) 23,300"],
+      "answer": "B) 23,000"
+    },
+    {
+      "question": "If the price of a product is reduced by 20% and the new price is Rs. 320, what was the original price?",
+      "options": ["A) Rs. 350", "B) Rs. 380", "C) Rs. 400", "D) Rs. 500"],
+      "answer": "C) Rs. 400"
+    },
+    {
+      "question": "A person walks 15 meters north, 10 meters east, and 5 meters south. How far is he from his starting point?",
+      "options": ["A) 10 meters", "B) 12 meters", "C) 15 meters", "D) 20 meters"],
+      "answer": "B) 12 meters"
+    },
+    {
+      "question": "Find the simple interest on Rs. 5000 for 3 years at 4% per annum.",
+      "options": ["A) Rs. 600", "B) Rs. 640", "C) Rs. 700", "D) Rs. 720"],
+      "answer": "A) Rs. 600"
+    },
+    {
+      "question": "A man can complete a task in 15 hours. Working with a partner, they complete it in 10 hours. How long will the partner take to complete the task alone?",
+      "options": ["A) 20 hours", "B) 25 hours", "C) 30 hours", "D) 35 hours"],
+      "answer": "B) 25 hours"
+    },
+    {
+      "question": "A bag contains 6 red, 7 green, and 8 blue marbles. What is the probability of picking a green marble?",
+      "options": ["A) 7/21", "B) 7/20", "C) 6/21", "D) 6/20"],
+      "answer": "B) 7/21"
+    },
+    {
+      "question": "A train is moving at a speed of 90 km/h. How long will it take to cover a distance of 45 km?",
+      "options": ["A) 30 minutes", "B) 45 minutes", "C) 60 minutes", "D) 90 minutes"],
+      "answer": "B) 30 minutes"
+    },
+    {
+      "question": "If 2 pencils cost Rs. 6, what is the cost of 5 pencils?",
+      "options": ["A) Rs. 10", "B) Rs. 12", "C) Rs. 15", "D) Rs. 18"],
+      "answer": "C) Rs. 15"
+    },
+    {
+      "question": "What is the least common multiple (LCM) of 12 and 18?",
+      "options": ["A) 36", "B) 72", "C) 108", "D) 144"],
+      "answer": "A) 36"
+    },
+    {
+      "question": "What is the square root of 81?",
+      "options": ["A) 7", "B) 8", "C) 9", "D) 10"],
+      "answer": "C) 9"
+    },
+    {
+      "question": "A cylinder has a radius of 3 cm and a height of 7 cm. What is its volume?",
+      "options": ["A) 63 cm³", "B) 84 cm³", "C) 90 cm³", "D) 100 cm³"],
+      "answer": "A) 63 cm³"
+    },
+    {
+      "question": "A person invests Rs. 10,000 in a bank at 8% annual interest. What will be the compound interest after 2 years?",
+      "options": ["A) Rs. 1,600", "B) Rs. 1,680", "C) Rs. 2,000", "D) Rs. 2,200"],
+      "answer": "B) Rs. 1,680"
+    },
+    {
+      "question": "How many months are in 7 years and 5 months?",
+      "options": ["A) 82 months", "B) 85 months", "C) 90 months", "D) 95 months"],
+      "answer": "B) 89 months"
+    },
+    {
+      "question": "A boat travels 30 km upstream in 6 hours. What is its speed in still water?",
+      "options": ["A) 5 km/h", "B) 6 km/h", "C) 7 km/h", "D) 8 km/h"],
+      "answer": "C) 7 km/h"
+    },
+    {
+      "question": "A shopkeeper bought an item for Rs. 800 and sold it for Rs. 960. What is the profit percentage?",
+      "options": ["A) 10%", "B) 15%", "C) 20%", "D) 25%"],
+      "answer": "C) 20%"
+    },
+    {
+      "question": "What is the greatest common divisor (GCD) of 36 and 60?",
+      "options": ["A) 12", "B) 18", "C) 24", "D) 36"],
+      "answer": "A) 12"
+    }
+  ],
+
+
+  
+  "Data Structures and Algorithms": [
+    {
+      "question": "What is the difference between an array and a linked list?",
+      "options": [
+        "A) An array has a fixed size, while a linked list is dynamic.",
+        "B) An array allows fast insertions, while a linked list does not.",
+        "C) An array stores elements in contiguous memory locations, while a linked list stores elements in non-contiguous memory locations.",
+        "D) An array is faster than a linked list for random access."
+      ],
+      "answer": "C) An array stores elements in contiguous memory locations, while a linked list stores elements in non-contiguous memory locations."
+    },
+    {
+      "question": "Explain the concept of a stack and provide an example.",
+      "options": [
+        "A) A stack allows access to elements only from the bottom.",
+        "B) A stack allows access to elements only from the top (LIFO).",
+        "C) A stack allows access to elements only from the top (Last In, First Out).",
+        "D) A stack is an unordered collection of elements."
+      ],
+      "answer": "C) A stack allows access to elements only from the top (Last In, First Out)."
+    },
+    {
+      "question": "What is a queue? How does it work?",
+      "options": [
+        "A) A queue follows FIFO (First In, First Out) principle, elements are inserted at the rear and removed from the front.",
+        "B) A queue follows LIFO (Last In, First Out) principle.",
+        "C) A queue allows access from both ends.",
+        "D) A queue is used to store elements in non-contiguous memory."
+      ],
+      "answer": "A) A queue follows FIFO (First In, First Out) principle, elements are inserted at the rear and removed from the front."
+    },
+    {
+      "question": "What are the different types of sorting algorithms?",
+      "options": [
+        "A) Bubble sort, quicksort, insertion sort, merge sort.",
+        "B) Depth-first search, breadth-first search, Dijkstra's algorithm.",
+        "C) Heapsort, radix sort, selection sort.",
+        "D) Hashing, dynamic programming, greedy algorithm."
+      ],
+      "answer": "A) Bubble sort, quicksort, insertion sort, merge sort."
+    },
+    {
+      "question": "What is the time complexity of bubble sort?",
+      "options": [
+        "A) O(log n)",
+        "B) O(n^2)",
+        "C) O(n)",
+        "D) O(n log n)"
+      ],
+      "answer": "B) O(n^2)"
+    },
+    {
+      "question": "What is a binary search tree (BST)?",
+      "options": [
+        "A) A binary search tree is a tree data structure where each node has at most two children, with the left child smaller and the right child larger.",
+        "B) A binary search tree is a tree where each node can have any number of children.",
+        "C) A binary search tree only allows nodes with a maximum of one child.",
+        "D) A binary search tree is a graph-based structure."
+      ],
+      "answer": "A) A binary search tree is a tree data structure where each node has at most two children, with the left child smaller and the right child larger."
+    },
+    {
+      "question": "What is a hash table and how does it work?",
+      "options": [
+        "A) A hash table stores data in an array and uses hash functions for fast lookup.",
+        "B) A hash table stores data in key-value pairs and uses a hash function to index data.",
+        "C) A hash table is a list-based structure that stores data sequentially.",
+        "D) A hash table sorts elements based on their keys."
+      ],
+      "answer": "B) A hash table stores data in key-value pairs and uses a hash function to index data."
+    },
+    {
+      "question": "What is a graph? Explain its types.",
+      "options": [
+        "A) A graph is a linear structure of nodes connected by edges.",
+        "B) A graph consists of vertices and edges and can be directed or undirected, weighted or unweighted.",
+        "C) A graph is a tree with more than two children per node.",
+        "D) A graph is a type of list used to store data."
+      ],
+      "answer": "B) A graph consists of vertices and edges and can be directed or undirected, weighted or unweighted."
+    },
+    {
+      "question": "Explain Dijkstra’s algorithm.",
+      "options": [
+        "A) Dijkstra’s algorithm finds the shortest path from a source node to all other nodes in a graph with non-negative edge weights.",
+        "B) Dijkstra’s algorithm finds the longest path between nodes.",
+        "C) Dijkstra’s algorithm is used for sorting elements.",
+        "D) Dijkstra’s algorithm is used in binary search trees."
+      ],
+      "answer": "A) Dijkstra’s algorithm finds the shortest path from a source node to all other nodes in a graph with non-negative edge weights."
+    },
+    {
+      "question": "What is the difference between BFS and DFS?",
+      "options": [
+        "A) BFS uses a queue, while DFS uses a stack to explore nodes.",
+        "B) BFS explores nodes level by level, while DFS explores as deep as possible first.",
+        "C) BFS is used for weighted graphs, while DFS is used for unweighted graphs.",
+        "D) BFS is faster than DFS for all graph types."
+      ],
+      "answer": "B) BFS explores nodes level by level, while DFS explores as deep as possible first."
+    },
+    {
+      "question": "What is quicksort and how does it work?",
+      "options": [
+        "A) Quicksort is a divide-and-conquer algorithm that works by selecting a pivot and partitioning the array into two subarrays.",
+        "B) Quicksort selects a pivot and sorts elements around it recursively.",
+        "C) Quicksort is a type of merge sort.",
+        "D) Quicksort sorts elements using a heap."
+      ],
+      "answer": "B) Quicksort selects a pivot and sorts elements around it recursively."
+    },
+    {
+      "question": "Explain merge sort and its time complexity.",
+      "options": [
+        "A) Merge sort is a sorting algorithm that works by dividing the array into two halves and merging them in sorted order, with a time complexity of O(n^2).",
+        "B) Merge sort is a divide-and-conquer algorithm with a time complexity of O(n log n).",
+        "C) Merge sort has a time complexity of O(n).",
+        "D) Merge sort is used only for linked lists."
+      ],
+      "answer": "B) Merge sort is a divide-and-conquer algorithm with a time complexity of O(n log n)."
+    },
+    {
+      "question": "What are the different types of trees in data structures?",
+      "options": [
+        "A) Binary tree, AVL tree, red-black tree.",
+        "B) Binary tree, AVL tree, B-tree, and heap.",
+        "C) Binary tree, heap, stack, and queue.",
+        "D) Binary tree, binary search tree, queue."
+      ],
+      "answer": "B) Binary tree, AVL tree, B-tree, and heap."
+    },
+    {
+      "question": "What is the time complexity of insertion sort?",
+      "options": [
+        "A) O(n^2)",
+        "B) O(n log n)",
+        "C) O(n)",
+        "D) O(log n)"
+      ],
+      "answer": "A) O(n^2)"
+    },
+    {
+      "question": "What is the space complexity of a recursive function?",
+      "options": [
+        "A) O(1)",
+        "B) O(depth of recursion stack)",
+        "C) O(n)",
+        "D) O(log n)"
+      ],
+      "answer": "B) O(depth of recursion stack)"
+    },
+    {
+      "question": "What is an AVL tree and how does it differ from a BST?",
+      "options": [
+        "A) An AVL tree is a type of BST where the balance factor of each node is maintained to ensure it remains balanced.",
+        "B) An AVL tree maintains balance with a stricter balance factor condition than a regular BST.",
+        "C) An AVL tree is a form of heap.",
+        "D) There is no difference between an AVL tree and a BST."
+      ],
+      "answer": "B) An AVL tree maintains balance with a stricter balance factor condition than a regular BST."
+    },
+    {
+      "question": "What is a priority queue?",
+      "options": [
+        "A) A queue where elements are processed in the order they arrive.",
+        "B) A queue where elements are processed based on their priority.",
+        "C) A stack used to process elements.",
+        "D) A heap-based data structure."
+      ],
+      "answer": "B) A queue where elements are processed based on their priority."
+    },
+    {
+      "question": "What is the time complexity of binary search?",
+      "options": [
+        "A) O(log n)",
+        "B) O(n)",
+        "C) O(n log n)",
+        "D) O(n^2)"
+      ],
+      "answer": "A) O(log n)"
+    },
+    {
+      "question": "Explain the concept of memoization.",
+      "options": [
+        "A) Memoization is a technique used to improve the efficiency of recursive algorithms by storing intermediate results.",
+        "B) Memoization is a type of dynamic programming.",
+        "C) Memoization is used in sorting algorithms.",
+        "D) Memoization refers to caching results to avoid redundant calculations."
+      ],
+      "answer": "A) Memoization is a technique used to improve the efficiency of recursive algorithms by storing intermediate results."
+    },
+    {
+      "question": "What is the knapsack problem?",
+      "options": [
+        "A) A problem that involves optimizing the selection of items based on their weight and value.",
+        "B) A problem where items are selected to maximize value without exceeding a weight limit.",
+        "C) A problem used for graph traversal.",
+        "D) A problem used for sorting."
+      ],
+      "answer": "B) A problem where items are selected to maximize value without exceeding a weight limit."
+    },
+    {
+      "question": "What is the time complexity of selection sort?",
+      "options": [
+        "A) O(n)",
+        "B) O(n^2)",
+        "C) O(log n)",
+        "D) O(n log n)"
+      ],
+      "answer": "B) O(n^2)"
+    },
+    {
+      "question": "Explain the concept of backtracking in algorithms.",
+      "options": [
+        "A) Backtracking is an algorithmic technique used for finding solutions by trying partial solutions and discarding those that fail.",
+        "B) Backtracking is used for sorting algorithms.",
+        "C) Backtracking is used for dynamic programming.",
+        "D) Backtracking is used for greedy algorithms."
+      ],
+      "answer": "A) Backtracking is an algorithmic technique used for finding solutions by trying partial solutions and discarding those that fail."
+    },
+    {
+      "question": "What is topological sorting?",
+      "options": [
+        "A) A method of sorting elements based on their weight.",
+        "B) A sorting method for directed acyclic graphs (DAGs) where each vertex is ordered before its dependent vertices.",
+        "C) A method of sorting elements in non-decreasing order.",
+        "D) A sorting algorithm used in depth-first search."
+      ],
+      "answer": "B) A sorting method for directed acyclic graphs (DAGs) where each vertex is ordered before its dependent vertices."
+    }
+  ],
+
+
+
+  
+  "Machine Learning": [
+      {
+        "question": "What is the difference between supervised and unsupervised learning?",
+        "options": [
+          "A) Supervised learning uses labeled data; unsupervised learning uses unlabeled data.",
+          "B) Supervised learning uses unlabeled data; unsupervised learning uses labeled data.",
+          "C) Both use labeled data.",
+          "D) Both use unlabeled data."
+        ],
+        "answer": "A) Supervised learning uses labeled data; unsupervised learning uses unlabeled data."
+      },
+      {
+        "question": "What is a confusion matrix?",
+        "options": [
+          "A) A matrix used to compute precision and recall.",
+          "B) A matrix used to evaluate the performance of a classification model.",
+          "C) A matrix that helps visualize loss functions.",
+          "D) A matrix used for clustering."
+        ],
+        "answer": "B) A matrix used to evaluate the performance of a classification model."
+      },
+      {
+        "question": "Explain the concept of overfitting and underfitting.",
+        "options": [
+          "A) Overfitting occurs when the model is too simple, and underfitting occurs when it is too complex.",
+          "B) Overfitting occurs when the model is too complex, and underfitting occurs when it is too simple.",
+          "C) Both occur when the model is too simple.",
+          "D) Both occur when the model is too complex."
+        ],
+        "answer": "B) Overfitting occurs when the model is too complex, and underfitting occurs when it is too simple."
+      },
+      {
+        "question": "What is cross-validation in machine learning?",
+        "options": [
+          "A) A technique used to test the performance of a model on unseen data.",
+          "B) A process of adjusting hyperparameters.",
+          "C) A method of reducing the complexity of a model.",
+          "D) A way to evaluate the model on the same data repeatedly."
+        ],
+        "answer": "A) A technique used to test the performance of a model on unseen data."
+      },
+      {
+        "question": "What are precision, recall, and F1-score?",
+        "options": [
+          "A) Metrics used to evaluate regression models.",
+          "B) Metrics used to evaluate classification models.",
+          "C) Metrics used to evaluate clustering models.",
+          "D) Metrics used to evaluate neural networks only."
+        ],
+        "answer": "B) Metrics used to evaluate classification models."
+      },
+      {
+        "question": "What is the purpose of a learning rate in an optimization algorithm?",
+        "options": [
+          "A) It determines the step size taken in each iteration during optimization.",
+          "B) It regulates the number of layers in a neural network.",
+          "C) It reduces the complexity of a model.",
+          "D) It controls the regularization in the model."
+        ],
+        "answer": "A) It determines the step size taken in each iteration during optimization."
+      },
+      {
+        "question": "What is the difference between a decision tree and a random forest?",
+        "options": [
+          "A) A decision tree uses multiple trees, while random forest uses only one tree.",
+          "B) A random forest uses an ensemble of decision trees.",
+          "C) A decision tree uses bagging, while random forest does not.",
+          "D) Both are the same but random forest works on regression problems only."
+        ],
+        "answer": "B) A random forest uses an ensemble of decision trees."
+      },
+      {
+        "question": "What is regularization in machine learning?",
+        "options": [
+          "A) A technique to add noise to the data for better generalization.",
+          "B) A technique to increase the complexity of the model.",
+          "C) A technique to prevent overfitting by adding a penalty to the loss function.",
+          "D) A technique to speed up the training process."
+        ],
+        "answer": "C) A technique to prevent overfitting by adding a penalty to the loss function."
+      },
+      {
+        "question": "Explain the bias-variance tradeoff.",
+        "options": [
+          "A) Increasing bias reduces variance and leads to overfitting.",
+          "B) Increasing variance reduces bias and leads to underfitting.",
+          "C) A balance between bias and variance is needed to avoid overfitting or underfitting.",
+          "D) There is no relationship between bias and variance."
+        ],
+        "answer": "C) A balance between bias and variance is needed to avoid overfitting or underfitting."
+      },
+      {
+        "question": "What is the difference between classification and regression tasks?",
+        "options": [
+          "A) Classification predicts continuous output, while regression predicts discrete output.",
+          "B) Classification predicts categorical output, while regression predicts continuous output.",
+          "C) Both classification and regression predict continuous output.",
+          "D) Both classification and regression predict categorical output."
+        ],
+        "answer": "B) Classification predicts categorical output, while regression predicts continuous output."
+      },
+      {
+        "question": "What are support vector machines (SVM)?",
+        "options": [
+          "A) Supervised learning algorithms used for classification and regression.",
+          "B) Unsupervised learning algorithms used for clustering.",
+          "C) Supervised learning algorithms used only for regression.",
+          "D) Unsupervised learning algorithms used for classification."
+        ],
+        "answer": "A) Supervised learning algorithms used for classification and regression."
+      },
+      {
+        "question": "What is a neural network and how does it work?",
+        "options": [
+          "A) A network of interconnected computers used for deep learning.",
+          "B) A machine learning model inspired by the structure of the human brain.",
+          "C) A technique to reduce overfitting in a model.",
+          "D) A network that generates synthetic data."
+        ],
+        "answer": "B) A machine learning model inspired by the structure of the human brain."
+      },
+      {
+        "question": "What is gradient descent and how does it work?",
+        "options": [
+          "A) An optimization technique used to minimize the cost function by adjusting weights incrementally.",
+          "B) A technique used to reduce the dimensionality of data.",
+          "C) A method of adjusting hyperparameters.",
+          "D) A regularization technique to avoid overfitting."
+        ],
+        "answer": "A) An optimization technique used to minimize the cost function by adjusting weights incrementally."
+      },
+      {
+        "question": "What is the curse of dimensionality in machine learning?",
+        "options": [
+          "A) The difficulty of finding relevant features when the number of features is too high.",
+          "B) The complexity of models with low dimensions.",
+          "C) The effect of noise in models with low dimensions.",
+          "D) A phenomenon that only occurs in neural networks."
+        ],
+        "answer": "A) The difficulty of finding relevant features when the number of features is too high."
+      },
+      {
+        "question": "What are k-nearest neighbors (KNN)?",
+        "options": [
+          "A) A supervised learning algorithm used for classification and regression.",
+          "B) A supervised learning algorithm used for clustering.",
+          "C) An unsupervised learning algorithm used for dimensionality reduction.",
+          "D) An optimization algorithm used for training models."
+        ],
+        "answer": "A) A supervised learning algorithm used for classification and regression."
+      },
+      {
+        "question": "What is principal component analysis (PCA)?",
+        "options": [
+          "A) A technique used to reduce the dimensionality of data by transforming features into principal components.",
+          "B) A method for classifying high-dimensional data.",
+          "C) A technique used for data normalization.",
+          "D) A method for clustering data."
+        ],
+        "answer": "A) A technique used to reduce the dimensionality of data by transforming features into principal components."
+      },
+      {
+        "question": "What is a convolutional neural network (CNN)?",
+        "options": [
+          "A) A neural network used for sequence prediction.",
+          "B) A neural network architecture used for processing grid-like data, such as images.",
+          "C) A neural network used for time-series forecasting.",
+          "D) A neural network used for text data processing."
+        ],
+        "answer": "B) A neural network architecture used for processing grid-like data, such as images."
+      },
+      {
+        "question": "Explain the difference between batch gradient descent and stochastic gradient descent.",
+        "options": [
+          "A) Batch gradient descent uses a single data point per iteration, while stochastic gradient descent uses all data points.",
+          "B) Batch gradient descent uses all data points in one iteration, while stochastic gradient descent uses a single data point.",
+          "C) Both use a single data point in each iteration.",
+          "D) Both use all data points in each iteration."
+        ],
+        "answer": "B) Batch gradient descent uses all data points in one iteration, while stochastic gradient descent uses a single data point."
+      },
+      {
+        "question": "What is a recurrent neural network (RNN)?",
+        "options": [
+          "A) A neural network designed for sequence prediction tasks like time-series forecasting.",
+          "B) A neural network used only for image classification.",
+          "C) A neural network designed for supervised learning tasks.",
+          "D) A neural network used for reinforcement learning."
+        ],
+        "answer": "A) A neural network designed for sequence prediction tasks like time-series forecasting."
+      },
+      {
+        "question": "What is the purpose of an activation function in a neural network?",
+        "options": [
+          "A) It determines the learning rate.",
+          "B) It introduces non-linearity to the model.",
+          "C) It regularizes the model.",
+          "D) It normalizes the data."
+        ],
+        "answer": "B) It introduces non-linearity to the model."
+      },
+      {
+        "question": "What is a support vector machine's (SVM) margin?",
+        "options": [
+          "A) The distance between the closest data points from different classes to the decision boundary.",
+          "B) The maximum possible number of support vectors.",
+          "C) The number of iterations needed for the model to converge.",
+          "D) The difference between the predicted output and the actual output."
+        ],
+        "answer": "A) The distance between the closest data points from different classes to the decision boundary."
+      },
+      {
+        "question": "What is the k-means clustering algorithm?",
+        "options": [
+          "A) A supervised learning algorithm used for classification.",
+          "B) An unsupervised learning algorithm used for clustering data into k groups.",
+          "C) A reinforcement learning algorithm.",
+          "D) A method for reducing the dimensionality of data."
+        ],
+        "answer": "B) An unsupervised learning algorithm used for clustering data into k groups."
+      },
+      {
+        "question": "What is the difference between bagging and boosting?",
+        "options": [
+          "A) Bagging combines the predictions of weak models, while boosting combines strong models.",
+          "B) Bagging improves model accuracy by focusing on difficult examples, while boosting improves model accuracy by averaging predictions.",
+          "C) Bagging uses parallel models, while boosting uses sequential models.",
+          "D) There is no difference."
+        ],
+        "answer": "C) Bagging uses parallel models, while boosting uses sequential models."
+      },
+      {
+        "question": "What are hyperparameters in machine learning?",
+        "options": [
+          "A) Parameters that are learned by the model during training.",
+          "B) Parameters set before training that control the learning process (e.g., learning rate, number of layers).",
+          "C) Parameters used to evaluate model performance.",
+          "D) Parameters used to normalize the input data."
+        ],
+        "answer": "B) Parameters set before training that control the learning process (e.g., learning rate, number of layers)."
+      },
+      {
+        "question": "What is the ROC curve and what does it represent?",
+        "options": [
+          "A) A curve that shows the relationship between precision and recall.",
+          "B) A curve that shows the relationship between true positive rate and false positive rate.",
+          "C) A curve that shows the accuracy of a regression model.",
+          "D) A curve used to visualize decision boundaries in clustering."
+        ],
+        "answer": "B) A curve that shows the relationship between true positive rate and false positive rate."
+      },
+      {
+        "question": "What is the role of the optimizer in a machine learning algorithm?",
+        "options": [
+          "A) It selects the best model for a given problem.",
+          "B) It adjusts model parameters to minimize the cost function.",
+          "C) It defines the structure of the neural network.",
+          "D) It splits the data into training and test sets."
+        ],
+        "answer": "B) It adjusts model parameters to minimize the cost function."
+      },
+      {
+        "question": "What is natural language processing (NLP)?",
+        "options": [
+          "A) A technique for processing numerical data.",
+          "B) A field of machine learning focused on the interaction between computers and human language.",
+          "C) A method for clustering text data.",
+          "D) A technique for optimizing neural networks."
+        ],
+        "answer": "B) A field of machine learning focused on the interaction between computers and human language."
+      },
+      {
+        "question": "What is reinforcement learning?",
+        "options": [
+          "A) A learning algorithm that makes decisions by evaluating the reward or punishment for actions.",
+          "B) A learning algorithm used for clustering.",
+          "C) A learning algorithm that predicts continuous outcomes.",
+          "D) A learning algorithm used for regression tasks."
+        ],
+        "answer": "A) A learning algorithm that makes decisions by evaluating the reward or punishment for actions."
+      },
+      {
+        "question": "How does the Naive Bayes classifier work?",
+        "options": [
+          "A) It makes predictions based on the Bayes theorem with strong independence assumptions between features.",
+          "B) It uses decision trees to classify data.",
+          "C) It is a clustering algorithm.",
+          "D) It is a neural network-based classifier."
+        ],
+        "answer": "A) It makes predictions based on the Bayes theorem with strong independence assumptions between features."
+      },
+      {
+        "question": "What is the difference between L1 and L2 regularization?",
+        "options": [
+          "A) L1 regularization adds absolute value of weights to the loss function, while L2 adds squared values of weights.",
+          "B) L1 regularization reduces model complexity, while L2 increases complexity.",
+          "C) L1 is used in neural networks only, while L2 is used for decision trees.",
+          "D) There is no difference."
+        ],
+        "answer": "A) L1 regularization adds absolute value of weights to the loss function, while L2 adds squared values of weights."
+      }
+    ],
+
+
+
+
+    "questions": [
+      {
+        "question": "What is the difference between a list and a tuple in Python?",
+        "options": [
+          "A) Lists are immutable, while tuples are mutable.",
+          "B) Lists are mutable, while tuples are immutable.",
+          "C) Lists can hold different data types, while tuples cannot.",
+          "D) There is no difference between lists and tuples."
+        ],
+        "answer": "B) Lists are mutable, while tuples are immutable."
+      },
+      {
+        "question": "How do you define a function in Python?",
+        "options": [
+          "A) By using the `def` keyword followed by the function name and parentheses.",
+          "B) By using the `function` keyword.",
+          "C) By using the `func` keyword.",
+          "D) By using the `lambda` keyword."
+        ],
+        "answer": "A) By using the `def` keyword followed by the function name and parentheses."
+      },
+      {
+        "question": "What are Python decorators and how do they work?",
+        "options": [
+          "A) A decorator is a special type of function used to modify another function or method.",
+          "B) A decorator is a design pattern that allows the behavior of a function or method to be modified dynamically.",
+          "C) A decorator is a built-in module for creating functions.",
+          "D) A decorator is used to create objects in Python."
+        ],
+        "answer": "B) A decorator is a design pattern that allows the behavior of a function or method to be modified dynamically."
+      },
+      {
+        "question": "What is a lambda function in Python?",
+        "options": [
+          "A) A small anonymous function defined using the `lambda` keyword.",
+          "B) A function that can only return one value.",
+          "C) A function that is used to handle errors.",
+          "D) A function that takes multiple arguments but returns only one."
+        ],
+        "answer": "A) A small anonymous function defined using the `lambda` keyword."
+      },
+      {
+        "question": "How does exception handling work in Python?",
+        "options": [
+          "A) It is done using `try`, `except`, `else`, and `finally` blocks.",
+          "B) It is done using `if`, `else`, and `except` blocks.",
+          "C) Python does not support exception handling.",
+          "D) It is done using `catch` and `throw` keywords."
+        ],
+        "answer": "A) It is done using `try`, `except`, `else`, and `finally` blocks."
+      },
+      {
+        "question": "What are the different types of data structures available in Python?",
+        "options": [
+          "A) Lists, tuples, dictionaries, sets, and strings.",
+          "B) Lists, tuples, dictionaries, sets, and arrays.",
+          "C) Lists, arrays, queues, and heaps.",
+          "D) Lists, sets, graphs, and trees."
+        ],
+        "answer": "B) Lists, tuples, dictionaries, sets, and arrays."
+      },
+      {
+        "question": "How do you create a dictionary in Python?",
+        "options": [
+          "A) `d = []`",
+          "B) `d = {key: value}`",
+          "C) `d = ()`",
+          "D) `d = set()`"
+        ],
+        "answer": "B) `d = {key: value}`"
+      },
+      {
+        "question": "How do you handle files in Python?",
+        "options": [
+          "A) By using the `open()` function to open the file and `close()` to close it.",
+          "B) By using the `with` statement to open files, ensuring they are automatically closed.",
+          "C) By using `file.read()` and `file.write()` functions only.",
+          "D) Python does not support file handling."
+        ],
+        "answer": "B) By using the `with` statement to open files, ensuring they are automatically closed."
+      },
+      {
+        "question": "What is the difference between Python 2 and Python 3?",
+        "options": [
+          "A) Python 3 is backwards compatible with Python 2.",
+          "B) Python 3 has better Unicode support and has changes to print statements and integer division.",
+          "C) Python 2 is faster than Python 3.",
+          "D) Python 2 supports lambda functions, but Python 3 does not."
+        ],
+        "answer": "B) Python 3 has better Unicode support and has changes to print statements and integer division."
+      },
+      {
+        "question": "How do you install a package using pip in Python?",
+        "options": [
+          "A) `python install package_name`",
+          "B) `pip install package_name`",
+          "C) `pip add package_name`",
+          "D) `python install --package package_name`"
+        ],
+        "answer": "B) `pip install package_name`"
+      },
+      {
+        "question": "What are list comprehensions in Python?",
+        "options": [
+          "A) A way to create lists using loops.",
+          "B) A concise way to create lists using an expression within square brackets.",
+          "C) A special type of list that handles errors.",
+          "D) A method for modifying existing lists."
+        ],
+        "answer": "B) A concise way to create lists using an expression within square brackets."
+      },
+      {
+        "question": "What is the difference between deep copy and shallow copy?",
+        "options": [
+          "A) A shallow copy copies only the references, while a deep copy copies the entire object, including nested objects.",
+          "B) A shallow copy copies the entire object, while a deep copy copies only the references.",
+          "C) There is no difference; both are the same.",
+          "D) A shallow copy is used for lists, and deep copy is used for dictionaries."
+        ],
+        "answer": "A) A shallow copy copies only the references, while a deep copy copies the entire object, including nested objects."
+      },
+      {
+        "question": "How does memory management work in Python?",
+        "options": [
+          "A) Python uses an automatic garbage collector to manage memory.",
+          "B) Memory management is manual, and the programmer is responsible for freeing memory.",
+          "C) Python does not manage memory; the operating system does it.",
+          "D) Python uses a memory pool that needs to be managed by the user."
+        ],
+        "answer": "A) Python uses an automatic garbage collector to manage memory."
+      },
+      {
+        "question": "What is a Python module?",
+        "options": [
+          "A) A file containing Python code that can define functions, classes, and variables.",
+          "B) A collection of Python files bundled together.",
+          "C) A program that is written in Python.",
+          "D) A type of function that is only used for file handling."
+        ],
+        "answer": "A) A file containing Python code that can define functions, classes, and variables."
+      },
+      {
+        "question": "What is a Python package?",
+        "options": [
+          "A) A single Python module.",
+          "B) A collection of Python modules organized in directories.",
+          "C) A collection of classes and functions bundled in a Python script.",
+          "D) A Python library for managing packages."
+        ],
+        "answer": "B) A collection of Python modules organized in directories."
+      },
+      {
+        "question": "What is the purpose of the `self` keyword in Python classes?",
+        "options": [
+          "A) `self` is used to define class variables.",
+          "B) `self` is used to represent the instance of the class.",
+          "C) `self` is used to define static methods.",
+          "D) `self` is used for inheritance."
+        ],
+        "answer": "B) `self` is used to represent the instance of the class."
+      },
+      {
+        "question": "How do you handle multiple exceptions in a Python program?",
+        "options": [
+          "A) By using multiple `except` blocks.",
+          "B) By using a `try` block only.",
+          "C) Python does not support handling multiple exceptions.",
+          "D) By using `else` after each exception."
+        ],
+        "answer": "A) By using multiple `except` blocks."
+      },
+      {
+        "question": "What is the difference between `is` and `==` in Python?",
+        "options": [
+          "A) `is` compares object identity, and `==` compares values.",
+          "B) `is` compares object identity, and `==` compares the values of objects.",
+          "C) `is` is used for string comparison, and `==` is used for numeric comparison.",
+          "D) `is` and `==` are interchangeable in Python."
+        ],
+        "answer": "B) `is` compares object identity, and `==` compares the values of objects."
+      },
+      {
+        "question": "How do you convert a string to an integer in Python?",
+        "options": [
+          "A) `int(\"string\")`",
+          "B) `str(\"string\")`",
+          "C) `float(\"string\")`",
+          "D) `convert(\"string\")`"
+        ],
+        "answer": "A) `int(\"string\")`"
+      },
+      {
+        "question": "How does the `range()` function work in Python?",
+        "options": [
+          "A) It generates a list of numbers within a specified range.",
+          "B) It generates a sequence of numbers, but not a list.",
+          "C) It creates a tuple of numbers.",
+          "D) It is used for generating random numbers."
+        ],
+        "answer": "B) It generates a sequence of numbers, but not a list."
+      },
+      {
+        "question": "How can you handle exceptions using a `try` block in Python?",
+        "options": [
+          "A) By using the `except` block to catch exceptions.",
+          "B) By using the `else` block for normal execution.",
+          "C) By using the `finally` block to execute code regardless of exceptions.",
+          "D) All of the above."
+        ],
+        "answer": "D) All of the above."
+      }
+    ]
+
+
+}
